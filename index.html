@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelMate - Travel Itinerary Planner</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header>
+        <h1>TravelMate</h1>
+
+        <nav aria-label="Main Navigation">
+            <a href="#home">Home</a>
+            <a href="#plan">Plan Trip</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#itinerary">My Itinerary</a>
+            <a href="#budget">Budget</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <main>
+        <section id="home">
+            <h2>Plan Your Perfect Trip!</h2>
+
+            <p>
+                Welcome to TravelMate!
+                Plan your journey, explore destinations,
+                and organize your travel activities easily.
+            </p>
+
+            <a href="#plan">Start Planning</a>
+        </section>
+
+
+        <!-- Plan Your Trip Section -->
+        <section id="plan">
+
+            <h2>Plan Your Trip</h2>
+
+            <form id="tripForm">
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination"
+                       placeholder="Enter destination" required>
+
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" required>
+
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" required>
+
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers"
+                       min="1" value="1" required>
+
+                <button type="submit">Create My Trip</button>
+
+            </form>
+        </section>
+
+
+        <!-- Popular Destinations Section -->
+        <section id="destinations">
+
+            <h2>Popular Destinations</h2>
+
+            <div class="destination-container">
+
+                <article class="destination-card">
+                    <img src="images/goa.jpg"
+                         alt="Beautiful beach in Goa">
+                    <h3>Goa</h3>
+                    <p>Enjoy beautiful beaches and sunsets.</p>
+                </article>
+
+                <article class="destination-card">
+                    <img src="images/manali.jpg"
+                         alt="Snowy mountains in Manali">
+                    <h3>Manali</h3>
+                    <p>Explore mountains and natural beauty.</p>
+                </article>
+
+                <article class="destination-card">
+                    <img src="images/jaipur.jpg"
+                         alt="Historic architecture in Jaipur">
+                    <h3>Jaipur</h3>
+                    <p>Discover royal palaces and heritage.</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- My Itinerary Section -->
+        <section id="itinerary">
+
+            <h2>My Travel Itinerary</h2>
+
+            <p id="tripDetails">
+                Your trip details will appear here.
+            </p>
+
+            <h3>Add Activity</h3>
+
+            <form id="activityForm">
+
+                <label for="activityName">Activity Name:</label>
+                <input type="text" id="activityName"
+                       placeholder="Enter activity" required>
+
+                <label for="activityDate">Activity Date:</label>
+                <input type="date" id="activityDate" required>
+
+                <label for="activityTime">Activity Time:</label>
+                <input type="time" id="activityTime" required>
+
+                <label for="activityLocation">Location:</label>
+                <input type="text" id="activityLocation"
+                       placeholder="Enter location" required>
+
+                <button type="submit">Add Activity</button>
+
+            </form>
+
+            <h3>Planned Activities</h3>
+
+            <div id="activityList">
+                <p>No activities added yet.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Travel Budget Section -->
+        <section id="budget">
+
+            <h2>Travel Budget Calculator</h2>
+
+            <form id="budgetForm">
+
+                <label for="transport">Transport Cost:</label>
+                <input type="number" id="transport"
+                       min="0" value="0" required>
+
+                <label for="hotel">Hotel Cost:</label>
+                <input type="number" id="hotel"
+                       min="0" value="0" required>
+
+                <label for="food">Food Cost:</label>
+                <input type="number" id="food"
+                       min="0" value="0" required>
+
+                <label for="other">Other Expenses:</label>
+                <input type="number" id="other"
+                       min="0" value="0" required>
+
+                <button type="submit">Calculate Budget</button>
+
+            </form>
+
+            <h3>Total Budget: <span id="totalBudget">₹0</span></h3>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 TravelMate. All Rights Reserved.</p>
+        <p>Your Personal Travel Planner</p>
+    </footer>
+
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

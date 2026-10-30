@@ -1,0 +1,368 @@
+
+/* TravelMate - Tropical Teal Theme */
+
+
+/* 1. General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0FDFA;
+    color: #334155;
+    line-height: 1.6;
+}
+
+
+/* 2. Header and Navigation */
+header {
+    background-color: #115E59;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #CCFBF1;
+    text-decoration: underline;
+}
+
+
+/* 3. Common Section Styling */
+section {
+    padding: 60px 8%;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #115E59;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* 4. Home Section */
+#home {
+    background: linear-gradient(
+        135deg,
+        #CCFBF1,
+        #F0FDFA
+    );
+
+    text-align: center;
+    padding: 100px 8%;
+}
+
+#home h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #115E59;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home a:hover {
+    background-color: #0F766E;
+}
+
+
+/* 5. Forms Styling */
+form {
+    background-color: white;
+    padding: 30px;
+    max-width: 550px;
+    margin: 0 auto 30px;
+
+    border-radius: 12px;
+    border: 1px solid #CCFBF1;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #115E59;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+
+    border: 1px solid #94A3B8;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: 2px solid #0F766E;
+    outline-offset: 2px;
+    border-color: #0F766E;
+}
+
+
+/* 6. Buttons */
+button {
+    background-color: #115E59;
+    color: white;
+
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0F766E;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #0F766E;
+    outline-offset: 4px;
+}
+
+
+/* 7. Popular Destinations */
+#destinations {
+    background-color: #E6FFFA;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.destination-card {
+    background-color: white;
+    width: 300px;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    color: #115E59;
+    font-size: 22px;
+    padding: 15px 15px 5px;
+}
+
+.destination-card p {
+    padding: 0 15px 20px;
+}
+
+
+/* 8. My Itinerary Section */
+#itinerary {
+    background-color: #F0FDFA;
+}
+
+#itinerary h3 {
+    text-align: center;
+    color: #115E59;
+    margin: 25px 0 15px;
+}
+
+#tripDetails {
+    background-color: #CCFBF1;
+    padding: 20px;
+    border-radius: 8px;
+
+    max-width: 700px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+#activityList {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    border: 1px solid #CCFBF1;
+}
+
+#activityList p {
+    text-align: center;
+}
+
+
+/* 9. Travel Budget Section */
+#budget {
+    background-color: #E6FFFA;
+}
+
+#budget h3 {
+    text-align: center;
+    color: #115E59;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#totalBudget {
+    color: #0F766E;
+}
+
+
+/* 10. Footer */
+footer {
+    background-color: #115E59;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* 11. Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    #home {
+        padding: 70px 5%;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .destination-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+/* 12. Small Mobile Screens */
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #budget h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* 13. Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .destination-card {
+        transition: none;
+    }
+}
